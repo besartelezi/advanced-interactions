@@ -94,3 +94,23 @@ class Slider {
 const slider = new Slider(
     document.querySelector(".CarouselSlider")
 );
+
+class Collage {
+    constructor(collageElement) {
+        this.collage = collageElement;
+        this.collageImageClick = collageElement.querySelector(".image")
+        this.setEventListeners();
+    }
+    setEventListeners(){
+        this.collageImageClick.addEventListener("click", () => {
+            this.collageEnlarge()
+        })
+    }
+    collageEnlarge() {
+        window.alert("yeet");
+        console.log("yeetn't");
+    }
+}
+const collage = new Collage(
+    document.querySelector(".row.collage")
+)

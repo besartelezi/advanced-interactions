@@ -33,4 +33,13 @@ Thanks to the before mentioned website, I was able to create a working carousel 
 
 Adding a parallax effect was also quite easy thanks to CSS. I hope I can put everything I learned now to use in a future assignment.
 
-##
+## Rows, Rows, Rows your Collage!
+*A collage of images, and when you click on one of the images, it will enlarge and give you a short description.* That's my current objective! For now, my main goal is to create this with Javascript classes, so I can experiment a bit more with something I still don't feel comfortable using. <br>
+
+The first problem I had here, was that I was unable to add an eventListener to all classes that were a part of the collage. I tried using getElements and querySelectorAll, but it didn't work. The normal querySelector works, but only for the very first element that has the class I need. Now I'm considering selecting each and every single image by ID, adding an eventListener to them, so that all images use the same function class. I can add if functions in the class function, so that the text that appears will change depending on the image. <br>
+
+Writing the current problem down really helped me to get a clearer understanding of what's going wrong and what steps I can take. So remember this kids, **when in doubt, write it out!!**
+
+## Fun Features I'd Like to Add
+* Icons at the bottom of the carousel, so the user can see how many images there are and on what image he currently is.
+* A timeOut so that every 5 seconds, the current image in the carousel changes.
