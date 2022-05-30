@@ -77,6 +77,19 @@ body{
     height: 400px;
     overflow: hidden;
     position: relative;
+}#ImageOne{
+     background-image: url("images/grasspokemon.jpg");
+ }#ImageTwo{
+      background-image: url("images/darkpokemon.jpg");
+  }
+#ImageThree{
+    background-image: url("images/pokemonslide.jpg");
+}
+.SliderItem{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .CarouselSlider .SliderItem{
     height: 100%;

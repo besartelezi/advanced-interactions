@@ -28,7 +28,6 @@ class Slider {
             this.Next()
         })
     }
-
     setIndices(direction) {
         let index;
         if (direction === "NEXT") {
@@ -67,7 +66,7 @@ class Slider {
             this.sliderItems[this.nextItemIndex].classList.add("SlideEnd");
             this.sliderItems[this.nextItemIndex].classList.add("Active");
         }, 20);
-
+        //removes the classnames of the current slide and that of the one that was previously selected as the "next" one
         setTimeout(()=> {
             this.sliderItems[this.nextItemIndex].classList.remove("NextItem", "SlideEnd");
             this.sliderItems[this.currentIndex].classList.remove("SlideNext", "Active");
@@ -92,7 +91,6 @@ class Slider {
         },400);
     }
 }
-
 const slider = new Slider(
     document.querySelector(".CarouselSlider")
 );

@@ -1,5 +1,5 @@
 # Advanced Interactions
-[Take a look at this project here!](https://www.youtube.com/watch?v=kjS6bQ5OQ-o)
+[Take a look at this project here!](https://besartelezi.github.io/advanced-interactions/)
 
 Advanced Interactions with Javascript, now that's a challenge! The requirements for this project are:
 * A working parallax carousel.
@@ -29,4 +29,8 @@ The website mentioned that: *"For the initial carousel styles, we will position 
 I have also chosen to follow the steps on that website, because they're using Javascript classes, something I'm **extremely** unfamiliar with, but something I really want to learn. 
 
 ## The Ups and Downs of the Learning Experience
+Thanks to the before mentioned website, I was able to create a working carousel for my project. I learned **a lot** of things by creating it by following the steps the website mentioned. I now have more knowledge about the Javascript classes, and how you can manipulate classnames to create effects with CSS. 
 
+Adding a parallax effect was also quite easy thanks to CSS. I hope I can put everything I learned now to use in a future assignment.
+
+##
