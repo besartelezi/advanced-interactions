@@ -1,3 +1,4 @@
+/* This is all the code that was given to me by the coaches as a starting point for the assignment */
 body{
     padding-bottom: 50px;
 }
@@ -32,11 +33,6 @@ body{
 .box{
     border: 1px solid grey;
     height: 350px;
-}
-
-.carouselContainer{
-    background: royalblue;
-    height: 400px;
 }
 
 .title{
@@ -76,4 +72,70 @@ body{
 
 .mode:hover{
     cursor: pointer;
+}
+.CarouselSlider{
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.CarouselSlider .SliderItem{
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: absolute;
+    transition: transform 400ms;
+}
+.CarouselSlider .SliderItem.Active,
+.CarouselSlider .SliderItem.PreviousItem,
+.CarouselSlider .SliderItem.NextItem{
+    display: block;
+}
+
+.SliderControlNext,
+.SliderControlPrevious{
+    position: absolute;
+    z-index: 20;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.3;
+    transition: opacity 300ms;
+}
+.SliderControlPrevious{
+    left:20px;
+}
+.SliderControlPrevious:hover{
+    opacity: 1;
+}
+.SliderControlNext{
+    right: 20px;
+}
+.SliderButton{
+    height: 35px;
+    width: 35px;
+}
+
+.SliderItem.PreviousItem {
+    transform: translateX(-100%);
+}
+
+.SliderItem.NextItem {
+    transform: translateX(100%);
+}
+
+
+
+.SliderItem.PreviousItem,
+.SliderItem.Active.SlideNext {
+    transform: translateX(-100%);
+}
+
+.SliderItem.Active.SlidePrevious,
+.SliderItem.NextItem {
+    transform: translateX(100%);
+}
+
+.SliderItem.PreviousItem.SlideEnd,
+.SliderItem.NextItem.SlideEnd {
+    transform: translateX(0);
 }
