@@ -82,8 +82,10 @@ body{
     height: 100%;
     width: 100%;
     display: none;
+    object-fit: cover;
     position: absolute;
     transition: transform 400ms;
+
 }
 .CarouselSlider .SliderItem.Active,
 .CarouselSlider .SliderItem.PreviousItem,
@@ -122,8 +124,6 @@ body{
 .SliderItem.NextItem {
     transform: translateX(100%);
 }
-
-
 
 .SliderItem.PreviousItem,
 .SliderItem.Active.SlideNext {

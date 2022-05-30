@@ -88,7 +88,7 @@ class Slider {
             this.sliderItems[this.previousItemIndex].classList.remove("PreviousItem", "SlideEnd");
             this.sliderItems[this.currentIndex].classList.remove("SlidePrevious", "Active");
             this.isSliding = false;
-            this.setIndices("PREV");
+            this.setIndices("PREVIOUS");
         },400);
     }
 }
