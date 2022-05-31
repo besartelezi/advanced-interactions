@@ -160,9 +160,11 @@ body{
     height:100%;
     object-fit:cover
 }
+
 .CollageImages.Enlarge{
-    top: 10%;
-    height: 15%;
-    width: 75%;
-    position: absolute;
+    top: 5vh;
+    height: 70vh;
+    width: 50%;
+    left: 25%;
+    position: fixed;
 }

@@ -100,31 +100,56 @@ class Collage {
     constructor(collageElement) {
         this.collage = collageElement;
         this.collageImages = collageElement.querySelectorAll(".CollageImages");
+        this.collageBackground = collageElement.querySelectorAll(".col-3 picture")
         this.isEnlarged = false;
         this.setEventListeners();
     }
     setEventListeners(){
         this.collageImages.forEach(element => {
             element.addEventListener('click', (e)=>{
-                CurrentClickedImage = e.target
-                console.log(e.target.id)
+                CurrentClickedImage = e.target;
+                console.log(e.target.id);
                 this.collageEnlarge()
+            })
         })
-    })
     }
 
     collageEnlarge() {
         if (this.isEnlarged === false) {
-            console.log(CurrentClickedImage.id);
             CurrentClickedImage.classList.add("Enlarge");
+            console.log(CurrentClickedImage.alt);
+            const CreateDiv = document.createElement("div");
+            const CreateText = document.createTextNode(CurrentClickedImage.alt);
+            CreateDiv.setAttribute("id", "EnlargedText")
+            CreateDiv.appendChild(CreateText);
+            CurrentClickedImage.appendChild(CreateDiv);
             this.isEnlarged = true;
         }
         else{
             CurrentClickedImage.classList.remove("Enlarge");
+            while (CurrentClickedImage.firstChild){
+                CurrentClickedImage.removeChild(CurrentClickedImage.lastChild);
+            }
             this.isEnlarged = false;
         }
     }
 }
 const collage = new Collage(
-    document.querySelector(".row.collage")
-)
+    document.querySelector(".row.collage"))
+
+let Lightmode = true;
+const LightSwitch = document.getElementById("LightSwitch");
+LightSwitch.addEventListener("click", function () {
+    if (Lightmode === true) {
+        const SetDarkMode = document.querySelector(".lightMode");
+        SetDarkMode.classList.add("darkMode");
+        SetDarkMode.classList.remove("lightMode");
+        Lightmode = false;
+    }
+    else {
+        const SetDarkMode = document.querySelector(".darkMode");
+        SetDarkMode.classList.add("lightMode");
+        SetDarkMode.classList.remove("darkMode");
+        Lightmode = true;
+    }
+})
