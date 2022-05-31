@@ -101,7 +101,6 @@ class Collage {
     constructor(collageElement) {
         this.collage = collageElement;
         this.collageImages = collageElement.querySelectorAll(".CollageImages");
-        this.collageBackground = collageElement.querySelectorAll(".col-3 picture")
         this.isEnlarged = false;
         this.setEventListeners();
     }
@@ -205,4 +204,15 @@ function StopHoveringFarfetchd () {
     Farfetchd.classList.remove("PokemonVisible");
 }
 document.getElementById("FarfetchdHover").addEventListener("mouseleave", StopHoveringFarfetchd)
+
+const ChaserBox = document.getElementsByClassName("col-12 box")[0];
+const chaserBall = document.getElementsByClassName("chaser");
+
+let mouseX = 0;
+let mouseY = 0;
+
+let cursorX = 0;
+let cursorY = 0;
+
+let speed = 0.5;
 
