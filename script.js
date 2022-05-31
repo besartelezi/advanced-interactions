@@ -155,3 +155,54 @@ LightSwitch.addEventListener("click", function () {
         Lightmode = true;
     }
 })
+
+
+Pidgeot = document.getElementById("PidgeotImage");
+Magikarp = document.getElementById("MagikarpImage");
+Slowpoke = document.getElementById("SlowpokeImage");
+Farfetchd = document.getElementById("FarfetchdImage");
+//I would've liked to use a class here, and I will definitely look into how to do that
+function HoverPidgeot () {
+    Pidgeot.classList.add("PokemonVisible");
+    Pidgeot.classList.remove("PokemonImages")
+}
+document.getElementById("PidgeotHover").addEventListener("mouseover", HoverPidgeot)
+function StopHoveringPidgeot () {
+    Pidgeot.classList.add("PokemonImages");
+    Pidgeot.classList.remove("PokemonVisible");
+}
+document.getElementById("PidgeotHover").addEventListener("mouseleave", StopHoveringPidgeot)
+
+function HoverMagikarp () {
+    Magikarp.classList.add("PokemonVisible");
+    Magikarp.classList.remove("PokemonImages")
+}
+document.getElementById("MagikarpHover").addEventListener("mouseover", HoverMagikarp)
+function StopHoveringMagikarp () {
+    Magikarp.classList.add("PokemonImages");
+    Magikarp.classList.remove("PokemonVisible");
+}
+document.getElementById("MagikarpHover").addEventListener("mouseleave", StopHoveringMagikarp)
+
+function HoverSlowpoke () {
+    Slowpoke.classList.add("PokemonVisible");
+    Slowpoke.classList.remove("PokemonImages")
+}
+document.getElementById("SlowpokeHover").addEventListener("mouseover", HoverSlowpoke)
+function StopHoveringSlowpoke () {
+    Slowpoke.classList.add("PokemonImages");
+    Slowpoke.classList.remove("PokemonVisible");
+}
+document.getElementById("SlowpokeHover").addEventListener("mouseleave", StopHoveringSlowpoke)
+
+function HoverFarfetchd () {
+    Farfetchd.classList.add("PokemonVisible");
+    Farfetchd.classList.remove("PokemonImages")
+}
+document.getElementById("FarfetchdHover").addEventListener("mouseover", HoverFarfetchd)
+function StopHoveringFarfetchd () {
+    Farfetchd.classList.add("PokemonImages");
+    Farfetchd.classList.remove("PokemonVisible");
+}
+document.getElementById("FarfetchdHover").addEventListener("mouseleave", StopHoveringFarfetchd)
+

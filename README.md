@@ -4,7 +4,7 @@
 Advanced Interactions with Javascript, now that's a challenge! The requirements for this project are:
 - [x] A working parallax carousel.
 - [x] A collage of images, and when you click on one of the images, it will enlarge and give you a short description.
-- [ ] Hovering over a piece of text, in this case a Pokémon's name, it will create a small pop-up image above that name with an image of what the Pokémon looks like.
+- [x] Hovering over a piece of text, in this case a Pokémon's name, it will create a small pop-up image above that name with an image of what the Pokémon looks like.
 - [ ] A chasing circle, a red dot must chase the cursor as long as it is within a box on the website.
 - [ ] Another chasing circle, but this time it's a green dot that *runs away* from the cursor.
 - [ ] Have letters that are inside a span class do something of your choosing (let the letter "e" disappear, let the letter "a" rotate, etc.).
@@ -47,6 +47,9 @@ Now that I am able to console log the ID's of the images in collage I clicked, I
 I created a darkmode and lightmode for the website pretty quickly. I used the same methods of changing the classnames with javascript so a new CSS code would be applied. The website already had a darkmode class for the body available in the CSS, I just had to make the button itself work with JS.
 
 ## Who's that Pokémon?
+Because I made the collage earlier, I was able to finish this part of the project quite quickly. Is what I'd like to say, but, I did spend a lot of time trying to use JS classes in this part of the project. Unfortunately, I wasn't quite able to figure out how to do that. The hovering over the Pokémon's names to see the pictures works, but I would've liked to use classes for it. </br>
+
+I will try to redo this part in classes, but for now, the 8 separate functions will have to do.
 
 ## Fun Features I'd Like to Add
 - [ ] Icons at the bottom of the carousel, so the user can see how many images there are and on what image he currently is.

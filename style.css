@@ -179,3 +179,14 @@ body{
     left: 38%;
     text-align: center;
 }
+.PokemonImages{
+    display:none;
+}
+.PokemonVisible{
+    top: 5vh;
+    height: 25vh;
+    width: 15%;
+    left: 38%;
+    position: fixed;
+    display: block;
+}
