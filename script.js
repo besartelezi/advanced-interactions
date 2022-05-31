@@ -96,6 +96,7 @@ const slider = new Slider(
 );
 
 let CurrentClickedImage
+const FatherAppend = document.getElementById("BigDaddy");
 class Collage {
     constructor(collageElement) {
         this.collage = collageElement;
@@ -122,13 +123,14 @@ class Collage {
             const CreateText = document.createTextNode(CurrentClickedImage.alt);
             CreateDiv.setAttribute("id", "EnlargedText")
             CreateDiv.appendChild(CreateText);
-            CurrentClickedImage.appendChild(CreateDiv);
+            FatherAppend.appendChild(CreateDiv)
+            console.log(CurrentClickedImage)
             this.isEnlarged = true;
         }
         else{
             CurrentClickedImage.classList.remove("Enlarge");
-            while (CurrentClickedImage.firstChild){
-                CurrentClickedImage.removeChild(CurrentClickedImage.lastChild);
+            while (FatherAppend.firstChild){
+                FatherAppend.removeChild(FatherAppend.firstChild);
             }
             this.isEnlarged = false;
         }

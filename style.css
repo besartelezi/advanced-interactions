@@ -162,9 +162,20 @@ body{
 }
 
 .CollageImages.Enlarge{
-    top: 5vh;
-    height: 70vh;
-    width: 50%;
-    left: 25%;
+    top: 2vh;
+    height: 45vh;
+    width: 25%;
+    left: 38%;
     position: fixed;
+}
+#EnlargedText{
+    background-color: dimgray;
+    padding: 50px;
+    color: white;
+    font-size: 20px;
+    position: fixed;
+    top: 48vh;
+    width: 25%;
+    left: 38%;
+    text-align: center;
 }
