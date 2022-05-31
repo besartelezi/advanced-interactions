@@ -79,14 +79,14 @@ body{
     position: relative;
 }
 #ImageOne{
-     background-image: url("images/grasspokemon.jpg");
+     background-image: url("images/slider/grasspokemon.jpg");
 
 }
 #ImageTwo{
-      background-image: url("images/darkpokemon.jpg");
+      background-image: url("images/slider/darkpokemon.jpg");
 }
 #ImageThree{
-    background-image: url("images/pokemonslide.jpg");
+    background-image: url("images/slider/pokemonslide.jpg");
 }
 .SliderItem{
     background-attachment: fixed;

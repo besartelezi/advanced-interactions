@@ -3,7 +3,7 @@
 
 Advanced Interactions with Javascript, now that's a challenge! The requirements for this project are:
 - [x] A working parallax carousel.
-- [ ] A collage of images, and when you click on one of the images, it will enlarge and give you a short description.
+- [x] A collage of images, and when you click on one of the images, it will enlarge and give you a short description.
 - [ ] Hovering over a piece of text, in this case a Pokémon's name, it will create a small pop-up image above that name with an image of what the Pokémon looks like.
 - [ ] A chasing circle, a red dot must chase the cursor as long as it is within a box on the website.
 - [ ] Another chasing circle, but this time it's a green dot that *runs away* from the cursor.
@@ -45,6 +45,8 @@ Now that I am able to console log the ID's of the images in collage I clicked, I
 
 ## Light V.S. Dark: "The Eternal Battle!"
 I created a darkmode and lightmode for the website pretty quickly. I used the same methods of changing the classnames with javascript so a new CSS code would be applied. The website already had a darkmode class for the body available in the CSS, I just had to make the button itself work with JS.
+
+## Who's that Pokémon?
 
 ## Fun Features I'd Like to Add
 - [ ] Icons at the bottom of the carousel, so the user can see how many images there are and on what image he currently is.
