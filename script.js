@@ -94,22 +94,35 @@ class Slider {
 const slider = new Slider(
     document.querySelector(".CarouselSlider")
 );
+
+let CurrentClickedImage
 class Collage {
     constructor(collageElement) {
         this.collage = collageElement;
-        this.collageImages = collageElement.querySelectorAll(".image")
+        this.collageImages = collageElement.querySelectorAll(".CollageImages");
+        this.isEnlarged = false;
         this.setEventListeners();
     }
     setEventListeners(){
         this.collageImages.forEach(element => {
             element.addEventListener('click', (e)=>{
+                CurrentClickedImage = e.target
+                console.log(e.target.id)
                 this.collageEnlarge()
         })
     })
     }
 
     collageEnlarge() {
-        console.log("yeetn't");
+        if (this.isEnlarged === false) {
+            console.log(CurrentClickedImage.id);
+            CurrentClickedImage.classList.add("Enlarge");
+            this.isEnlarged = true;
+        }
+        else{
+            CurrentClickedImage.classList.remove("Enlarge");
+            this.isEnlarged = false;
+        }
     }
 }
 const collage = new Collage(

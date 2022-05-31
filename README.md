@@ -2,13 +2,13 @@
 [Take a look at this project here!](https://besartelezi.github.io/advanced-interactions/)
 
 Advanced Interactions with Javascript, now that's a challenge! The requirements for this project are:
-* A working parallax carousel.
-* A collage of images, and when you click on one of the images, it will enlarge and give you a short description.
-* Hovering over a piece of text, in this case a Pokémon's name, it will create a small pop-up image above that name with an image of what the Pokémon looks like. 
-* A chasing circle, a red dot must chase the cursor as long as it is within a box on the website.
-* Another chasing circle, but this time it's a green dot that *runs away* from the cursor.
-* Have letters that are inside a span class do something of your choosing (let the letter "e" disappear, let the letter "a" rotate, etc.).
-* A lightmode/darkmode switch
+- [x] A working parallax carousel.
+- [ ] A collage of images, and when you click on one of the images, it will enlarge and give you a short description.
+- [ ] Hovering over a piece of text, in this case a Pokémon's name, it will create a small pop-up image above that name with an image of what the Pokémon looks like.
+- [ ] A chasing circle, a red dot must chase the cursor as long as it is within a box on the website.
+- [ ] Another chasing circle, but this time it's a green dot that *runs away* from the cursor.
+- [ ] Have letters that are inside a span class do something of your choosing (let the letter "e" disappear, let the letter "a" rotate, etc.).
+- [ ] A lightmode/darkmode switch
 
 The minimum requirement for this project are just the three first requirements and one chasing circle of your choosing. I will however, try to finish all requirements. If I run out of time before I can finish everything, I want to at least have a functioning lightmode/darkmode switch. I think learning how to make such a switch might be very essential to becoming a pro Web Developer. Also, I hate lightmode. 
 
@@ -40,6 +40,11 @@ The first problem I had here, was that I was unable to add an eventListener to a
 
 Writing the current problem down really helped me to get a clearer understanding of what's going wrong and what steps I can take. So remember this kids, **when in doubt, write it out!!**
 
+## "You're grounded, for 'till Collage!"
+Now that I am able to console log the ID's of the images in collage I clicked, I will try to figure out how to enlarge these pictures and add a piece of text to it as well. I'm learning more about Modal Images right now, as that is the kind of images I want my collage to have.
+
+
+
 ## Fun Features I'd Like to Add
-* Icons at the bottom of the carousel, so the user can see how many images there are and on what image he currently is.
-* A timeOut so that every 5 seconds, the current image in the carousel changes.
+- [ ] Icons at the bottom of the carousel, so the user can see how many images there are and on what image he currently is.
+- [ ] A timeOut so that every 5 seconds, the current image in the carousel changes.
